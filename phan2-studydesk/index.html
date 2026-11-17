@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StudyDesk – sổ tay quản lý học phần trong học kỳ cho sinh viên Toán – Tin học.">
+  <title>StudyDesk | Tổng quan học kỳ</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Bỏ qua, đến nội dung</a>
+  <header class="app-bar">
+    <a class="logo" href="index.html">
+      <img src="assets/logo.svg" alt="" width="36" height="36">
+      <span>Study<b>Desk</b></span>
+    </a>
+    <nav class="tabs" aria-label="Điều hướng chính">
+      <a href="index.html" aria-current="page"><span aria-hidden="true">◫</span> Tổng quan</a>
+      <a href="hoc-phan.html"><span aria-hidden="true">☰</span> Học phần</a>
+      <a href="dang-ky.html"><span aria-hidden="true">＋</span> Thêm học phần</a>
+    </nav>
+    <p class="term">HK1 · 2026–2027</p>
+  </header>
+
+  <main id="main" class="page">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-text">
+        <p class="kicker">Một học kỳ, một bàn học</p>
+        <h1 id="intro-title">Chào Kỳ Ân, tuần này có <span class="hl">11 buổi học</span>.</h1>
+        <p>StudyDesk gom học phần, lịch học, hình thức đánh giá và hạn nộp của học kỳ vào một chỗ, để không phải mở lại thời khóa biểu PDF và nhóm chat mỗi sáng.</p>
+        <p class="intro-actions">
+          <a class="button" href="hoc-phan.html">Xem danh sách học phần</a>
+          <a class="button button-light" href="dang-ky.html">＋ Thêm học phần</a>
+        </p>
+      </div>
+      <img class="intro-art" src="assets/desk.svg" alt="Minh họa bàn học với laptop, sách và lịch" width="420" height="300">
+    </section>
+
+    <section class="kpis" aria-label="Số liệu học kỳ">
+      <article class="kpi"><h2>Học phần</h2><p class="kpi-num">11</p><p>4 Toán · 4 Tin · 3 Đại cương</p></article>
+      <article class="kpi"><h2>Tín chỉ</h2><p class="kpi-num">31</p><p>Tối đa cho phép: 32 TC</p></article>
+      <article class="kpi"><h2>Buổi / tuần</h2><p class="kpi-num">11</p><p>Trống: chiều Thứ 7</p></article>
+      <article class="kpi kpi-alert"><h2>Hạn gần nhất</h2><p class="kpi-num">25/11</p><p>TOA301 · Bài tập chương 4</p></article>
+    </section>
+
+    <div class="dash">
+      <section class="panel timetable" aria-labelledby="tt-title">
+        <div class="panel-head">
+          <h2 id="tt-title">Thời khóa biểu tuần</h2>
+          <p class="legend"><span class="g-toan">Toán học</span><span class="g-tin">Tin học</span><span class="g-dc">Đại cương</span></p>
+        </div>
+        <div class="tt-scroll">
+        <div class="tt-grid">
+          <p class="tt-corner">Buổi</p>
+          <p class="tt-day">Thứ 2</p>
+          <p class="tt-day">Thứ 3</p>
+          <p class="tt-day">Thứ 4</p>
+          <p class="tt-day">Thứ 5</p>
+          <p class="tt-day">Thứ 6</p>
+          <p class="tt-day">Thứ 7</p>
+          <p class="tt-sess">Sáng<small>tiết 1–4</small></p>
+          <a class="tt-slot g-tin" href="hoc-phan.html#TIN401"><b>TIN401</b> Thiết kế Web<small>B.204</small></a>
+          <a class="tt-slot g-dc" href="hoc-phan.html#DCB201"><b>DCB201</b> Tiếng Anh chuyên ngành<small>A.402</small></a>
+          <a class="tt-slot g-toan" href="hoc-phan.html#TOA302"><b>TOA302</b> Xác suất thống kê ứng dụng<small>C.207</small></a>
+          <a class="tt-slot g-tin" href="hoc-phan.html#TIN403"><b>TIN403</b> Cơ sở dữ liệu nâng cao<small>Lab I.12</small></a>
+          <a class="tt-slot g-dc" href="hoc-phan.html#DCB203"><b>DCB203</b> Pháp luật đại cương<small>Hội trường A</small></a>
+          <a class="tt-slot g-toan" href="hoc-phan.html#TOA303"><b>TOA303</b> Tối ưu hóa<small>C.105</small></a>
+          <p class="tt-sess">Chiều<small>tiết 6–9</small></p>
+          <a class="tt-slot g-toan" href="hoc-phan.html#TOA301"><b>TOA301</b> Giải tích số<small>C.105</small></a>
+          <a class="tt-slot g-tin" href="hoc-phan.html#TIN402"><b>TIN402</b> Học máy<small>C.301</small></a>
+          <a class="tt-slot g-toan" href="hoc-phan.html#TOA304"><b>TOA304</b> Lý thuyết đồ thị<small>B.110</small></a>
+          <a class="tt-slot g-dc" href="hoc-phan.html#DCB202"><b>DCB202</b> Kỹ năng thuyết trình<small>A.305</small></a>
+          <a class="tt-slot g-tin" href="hoc-phan.html#TIN404"><b>TIN404</b> Xử lý ảnh số<small>Lab I.14</small></a>
+          <p class="tt-slot tt-free">Trống</p>
+        </div>
+        </div>
+      </section>
+
+      <section class="panel deadlines" aria-labelledby="dl-title">
+        <div class="panel-head"><h2 id="dl-title">Sắp đến hạn</h2></div>
+        <ol class="dl-list">
+          <li>
+            <time>25/11</time>
+            <a href="hoc-phan.html#TOA301"><b>Bài tập chương 4</b><small>TOA301 · Giải tích số</small></a>
+          </li>
+          <li>
+            <time>26/11</time>
+            <a href="hoc-phan.html#DCB202"><b>Nộp slide nhóm</b><small>DCB202 · Kỹ năng thuyết trình</small></a>
+          </li>
+          <li>
+            <time>27/11</time>
+            <a href="hoc-phan.html#TOA302"><b>Kiểm tra giữa kỳ</b><small>TOA302 · Xác suất thống kê ứng dụng</small></a>
+          </li>
+          <li>
+            <time>28/11</time>
+            <a href="hoc-phan.html#TIN401"><b>Nộp WD-Lab03</b><small>TIN401 · Thiết kế Web</small></a>
+          </li>
+          <li>
+            <time>01/12</time>
+            <a href="hoc-phan.html#DCB201"><b>Thuyết trình 5 phút</b><small>DCB201 · Tiếng Anh chuyên ngành</small></a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="panel credits" aria-labelledby="cr-title">
+        <div class="panel-head"><h2 id="cr-title">Tín chỉ theo nhóm</h2></div>
+        <ul class="bars">
+          <li class="g-toan">
+            <span>Toán học</span>
+            <span class="bar"><span style="width: 39%"></span></span>
+            <b>12 TC</b>
+          </li>
+          <li class="g-tin">
+            <span>Tin học</span>
+            <span class="bar"><span style="width: 42%"></span></span>
+            <b>13 TC</b>
+          </li>
+          <li class="g-dc">
+            <span>Đại cương</span>
+            <span class="bar"><span style="width: 19%"></span></span>
+            <b>6 TC</b>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p><b>StudyDesk</b> – sổ tay học phần cho sinh viên Toán – Tin học. Dữ liệu mẫu, chỉ HTML + CSS.</p>
+    <p>WDLab03 · Phần 2</p>
+  </footer>
+</body>
+</html>

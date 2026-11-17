@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Biểu mẫu thêm học phần vào sổ tay StudyDesk (chỉ minh họa, không lưu dữ liệu).">
+  <title>StudyDesk | Thêm học phần</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#course-form">Bỏ qua, đến biểu mẫu</a>
+  <header class="app-bar">
+    <a class="logo" href="index.html">
+      <img src="assets/logo.svg" alt="" width="36" height="36">
+      <span>Study<b>Desk</b></span>
+    </a>
+    <nav class="tabs" aria-label="Điều hướng chính">
+      <a href="index.html"><span aria-hidden="true">◫</span> Tổng quan</a>
+      <a href="hoc-phan.html"><span aria-hidden="true">☰</span> Học phần</a>
+      <a href="dang-ky.html" aria-current="page"><span aria-hidden="true">＋</span> Thêm học phần</a>
+    </nav>
+    <p class="term">HK1 · 2026–2027</p>
+  </header>
+
+  <main id="main" class="page">
+    <div class="page-title">
+      <p class="kicker">Biểu mẫu</p>
+      <h1>Thêm học phần vào sổ tay</h1>
+      <p>Trình duyệt sẽ kiểm tra các trường có dấu <abbr title="bắt buộc">*</abbr> trước khi gửi. Gửi thành công chỉ mở trang thông báo, <strong>danh sách học phần không thay đổi</strong>.</p>
+    </div>
+
+    <div class="form-layout">
+      <form id="course-form" class="panel course-form" action="xac-nhan.html" method="get">
+        <fieldset>
+          <legend>Thông tin học phần</legend>
+          <div class="grid-2">
+            <p class="field">
+              <label for="ma-hp">Mã học phần <abbr title="bắt buộc">*</abbr></label>
+              <input id="ma-hp" name="maHocPhan" type="text" placeholder="VD: TIN405" required pattern="[A-Z]{3}[0-9]{3}" maxlength="6" aria-describedby="ma-hp-hint">
+              <small id="ma-hp-hint">3 chữ in hoa + 3 chữ số.</small>
+            </p>
+            <p class="field">
+              <label for="ten-hp">Tên học phần <abbr title="bắt buộc">*</abbr></label>
+              <input id="ten-hp" name="tenHocPhan" type="text" placeholder="VD: Khai phá dữ liệu" required minlength="4" maxlength="80">
+            </p>
+            <p class="field">
+              <label for="tin-chi">Số tín chỉ <abbr title="bắt buộc">*</abbr></label>
+              <input id="tin-chi" name="tinChi" type="number" min="1" max="5" step="1" value="3" required>
+            </p>
+            <p class="field">
+              <label for="danh-gia">Hình thức đánh giá</label>
+              <select id="danh-gia" name="danhGia">
+                <option value="tu-luan">Tự luận</option>
+                <option value="trac-nghiem">Trắc nghiệm</option>
+                <option value="do-an">Đồ án</option>
+                <option value="van-dap">Vấn đáp</option>
+              </select>
+            </p>
+          </div>
+          <div class="field">
+            <p class="label" id="nhom-label">Nhóm <abbr title="bắt buộc">*</abbr></p>
+            <div class="radio-row" role="radiogroup" aria-labelledby="nhom-label">
+              <label class="pill g-toan"><input type="radio" name="nhom" value="toan" required> Toán học</label>
+              <label class="pill g-tin"><input type="radio" name="nhom" value="tin"> Tin học</label>
+              <label class="pill g-dc"><input type="radio" name="nhom" value="dai-cuong"> Đại cương</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Lịch học</legend>
+          <div class="field">
+            <p class="label" id="thu-label">Ngày học trong tuần</p>
+            <div class="check-row" role="group" aria-labelledby="thu-label">
+              <label><input type="checkbox" name="thu" value="2"> T2</label>
+              <label><input type="checkbox" name="thu" value="3"> T3</label>
+              <label><input type="checkbox" name="thu" value="4"> T4</label>
+              <label><input type="checkbox" name="thu" value="5"> T5</label>
+              <label><input type="checkbox" name="thu" value="6"> T6</label>
+              <label><input type="checkbox" name="thu" value="7"> T7</label>
+            </div>
+          </div>
+          <div class="grid-2">
+            <p class="field">
+              <label for="buoi">Buổi <abbr title="bắt buộc">*</abbr></label>
+              <select id="buoi" name="buoi" required>
+                <option value="" selected disabled>Chọn buổi</option>
+                <option value="sang">Sáng · tiết 1–4</option>
+                <option value="chieu">Chiều · tiết 6–9</option>
+                <option value="toi">Tối · tiết 11–13</option>
+              </select>
+            </p>
+            <p class="field">
+              <label for="phong">Phòng</label>
+              <input id="phong" name="phong" type="text" placeholder="VD: C.207" maxlength="20">
+            </p>
+            <p class="field">
+              <label for="ngay-thi">Ngày thi dự kiến</label>
+              <input id="ngay-thi" name="ngayThi" type="date" min="2026-12-01" max="2027-01-31">
+            </p>
+            <p class="field">
+              <label for="email">Email nhận nhắc hạn</label>
+              <input id="email" name="email" type="email" placeholder="ten@example.com">
+            </p>
+          </div>
+        </fieldset>
+
+        <p class="field">
+          <label for="ghi-chu">Ghi chú</label>
+          <textarea id="ghi-chu" name="ghiChu" rows="4" maxlength="300" placeholder="Tài liệu, nhóm học, yêu cầu của giảng viên..."></textarea>
+        </p>
+
+        <p class="form-buttons">
+          <button class="button button-light" type="reset">Nhập lại</button>
+          <button class="button" type="submit">Lưu vào sổ tay ✓</button>
+        </p>
+      </form>
+
+      <aside class="panel form-help" aria-labelledby="help-title">
+        <h2 id="help-title">Mẹo nhập nhanh</h2>
+        <ul>
+          <li>Mã học phần lấy từ thời khóa biểu, ví dụ <code>TIN405</code>.</li>
+          <li>Tối đa 32 tín chỉ mỗi học kỳ; hiện đã dùng <b>31</b>.</li>
+          <li>Ô viền đỏ là ô đã nhập nhưng chưa đúng định dạng.</li>
+        </ul>
+        <p class="note">Đây là bản demo chỉ dùng HTML + CSS: không có cơ sở dữ liệu nên học phần mới không xuất hiện trong danh sách.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p><b>StudyDesk</b> – sổ tay học phần cho sinh viên Toán – Tin học. Dữ liệu mẫu, chỉ HTML + CSS.</p>
+    <p>WDLab03 · Phần 2</p>
+  </footer>
+</body>
+</html>

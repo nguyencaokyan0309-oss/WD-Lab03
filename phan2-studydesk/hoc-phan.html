@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Danh sách 11 học phần của học kỳ, lọc theo nhóm và xem chi tiết.">
+  <title>StudyDesk | Danh sách học phần</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#danh-sach">Bỏ qua, đến danh sách</a>
+  <header class="app-bar">
+    <a class="logo" href="index.html">
+      <img src="assets/logo.svg" alt="" width="36" height="36">
+      <span>Study<b>Desk</b></span>
+    </a>
+    <nav class="tabs" aria-label="Điều hướng chính">
+      <a href="index.html"><span aria-hidden="true">◫</span> Tổng quan</a>
+      <a href="hoc-phan.html" aria-current="page"><span aria-hidden="true">☰</span> Học phần</a>
+      <a href="dang-ky.html"><span aria-hidden="true">＋</span> Thêm học phần</a>
+    </nav>
+    <p class="term">HK1 · 2026–2027</p>
+  </header>
+
+  <main id="main" class="page">
+    <div class="page-title">
+      <p class="kicker">Học kỳ 1 · 2026–2027</p>
+      <h1>Danh sách học phần</h1>
+      <p>11 học phần, 31 tín chỉ. Chọn nhóm để lọc, bấm mã học phần để xem chi tiết.</p>
+    </div>
+
+    <div class="list-layout">
+      <section class="list-area" id="danh-sach" aria-labelledby="list-title">
+        <h2 id="list-title" class="sr-only">Bảng học phần</h2>
+      <input class="f-radio" type="radio" name="nhom" id="f-all" checked>
+      <input class="f-radio" type="radio" name="nhom" id="f-toan">
+      <input class="f-radio" type="radio" name="nhom" id="f-tin">
+      <input class="f-radio" type="radio" name="nhom" id="f-dc">
+        <div class="chips" role="group" aria-label="Lọc theo nhóm học phần">
+        <label for="f-all">Tất cả <b>11</b></label>
+        <label for="f-toan" class="g-toan">Toán học <b>4</b></label>
+        <label for="f-tin" class="g-tin">Tin học <b>4</b></label>
+        <label for="f-dc" class="g-dc">Đại cương <b>3</b></label>
+        </div>
+        <table class="course-table">
+          <caption>Học phần đăng ký trong học kỳ (dữ liệu mẫu)</caption>
+          <thead>
+            <tr><th scope="col">Mã</th><th scope="col">Tên học phần</th><th scope="col">Nhóm</th><th scope="col">TC</th><th scope="col">Lịch</th><th scope="col">Tiến độ</th></tr>
+          </thead>
+          <tbody>
+          <tr class="row g-tin">
+            <td data-label="Mã"><a href="#TIN401">TIN401</a></td>
+            <th scope="row">Thiết kế Web</th>
+            <td data-label="Nhóm"><span class="badge">Tin học</span></td>
+            <td data-label="Tín chỉ">3</td>
+            <td data-label="Lịch">Thứ 2 · Sáng</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 70%"></span></span> 70%</td>
+          </tr>
+          <tr class="row g-tin">
+            <td data-label="Mã"><a href="#TIN402">TIN402</a></td>
+            <th scope="row">Học máy</th>
+            <td data-label="Nhóm"><span class="badge">Tin học</span></td>
+            <td data-label="Tín chỉ">4</td>
+            <td data-label="Lịch">Thứ 3 · Chiều</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 55%"></span></span> 55%</td>
+          </tr>
+          <tr class="row g-tin">
+            <td data-label="Mã"><a href="#TIN403">TIN403</a></td>
+            <th scope="row">Cơ sở dữ liệu nâng cao</th>
+            <td data-label="Nhóm"><span class="badge">Tin học</span></td>
+            <td data-label="Tín chỉ">3</td>
+            <td data-label="Lịch">Thứ 5 · Sáng</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 60%"></span></span> 60%</td>
+          </tr>
+          <tr class="row g-tin">
+            <td data-label="Mã"><a href="#TIN404">TIN404</a></td>
+            <th scope="row">Xử lý ảnh số</th>
+            <td data-label="Nhóm"><span class="badge">Tin học</span></td>
+            <td data-label="Tín chỉ">3</td>
+            <td data-label="Lịch">Thứ 6 · Chiều</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 40%"></span></span> 40%</td>
+          </tr>
+          <tr class="row g-toan">
+            <td data-label="Mã"><a href="#TOA301">TOA301</a></td>
+            <th scope="row">Giải tích số</th>
+            <td data-label="Nhóm"><span class="badge">Toán học</span></td>
+            <td data-label="Tín chỉ">3</td>
+            <td data-label="Lịch">Thứ 2 · Chiều</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 65%"></span></span> 65%</td>
+          </tr>
+          <tr class="row g-toan">
+            <td data-label="Mã"><a href="#TOA302">TOA302</a></td>
+            <th scope="row">Xác suất thống kê ứng dụng</th>
+            <td data-label="Nhóm"><span class="badge">Toán học</span></td>
+            <td data-label="Tín chỉ">3</td>
+            <td data-label="Lịch">Thứ 4 · Sáng</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 75%"></span></span> 75%</td>
+          </tr>
+          <tr class="row g-toan">
+            <td data-label="Mã"><a href="#TOA303">TOA303</a></td>
+            <th scope="row">Tối ưu hóa</th>
+            <td data-label="Nhóm"><span class="badge">Toán học</span></td>
+            <td data-label="Tín chỉ">3</td>
+            <td data-label="Lịch">Thứ 7 · Sáng</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 50%"></span></span> 50%</td>
+          </tr>
+          <tr class="row g-toan">
+            <td data-label="Mã"><a href="#TOA304">TOA304</a></td>
+            <th scope="row">Lý thuyết đồ thị</th>
+            <td data-label="Nhóm"><span class="badge">Toán học</span></td>
+            <td data-label="Tín chỉ">3</td>
+            <td data-label="Lịch">Thứ 4 · Chiều</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 45%"></span></span> 45%</td>
+          </tr>
+          <tr class="row g-dc">
+            <td data-label="Mã"><a href="#DCB201">DCB201</a></td>
+            <th scope="row">Tiếng Anh chuyên ngành</th>
+            <td data-label="Nhóm"><span class="badge">Đại cương</span></td>
+            <td data-label="Tín chỉ">2</td>
+            <td data-label="Lịch">Thứ 3 · Sáng</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 80%"></span></span> 80%</td>
+          </tr>
+          <tr class="row g-dc">
+            <td data-label="Mã"><a href="#DCB202">DCB202</a></td>
+            <th scope="row">Kỹ năng thuyết trình</th>
+            <td data-label="Nhóm"><span class="badge">Đại cương</span></td>
+            <td data-label="Tín chỉ">2</td>
+            <td data-label="Lịch">Thứ 5 · Chiều</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 90%"></span></span> 90%</td>
+          </tr>
+          <tr class="row g-dc">
+            <td data-label="Mã"><a href="#DCB203">DCB203</a></td>
+            <th scope="row">Pháp luật đại cương</th>
+            <td data-label="Nhóm"><span class="badge">Đại cương</span></td>
+            <td data-label="Tín chỉ">2</td>
+            <td data-label="Lịch">Thứ 6 · Sáng</td>
+            <td data-label="Tiến độ"><span class="meter"><span style="width: 30%"></span></span> 30%</td>
+          </tr>
+          </tbody>
+          <tfoot>
+            <tr><th scope="row" colspan="3">Tổng cộng</th><td>31</td><td colspan="2">11 buổi / tuần</td></tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <aside class="detail-panel" aria-label="Chi tiết học phần">
+        <div class="detail-empty">
+          <img src="assets/desk.svg" alt="" width="420" height="300">
+          <p><b>Chưa chọn học phần.</b> Bấm vào một mã trong bảng (ví dụ <a href="#TIN401">TIN401</a>) để xem lịch, phòng, hình thức đánh giá và hạn nộp.</p>
+        </div>
+        <article class="detail g-tin" id="TIN401" aria-labelledby="t-TIN401">
+          <img src="assets/tin.svg" alt="Biểu tượng nhóm Tin học" width="56" height="56">
+          <p class="detail-code">TIN401 · Tin học</p>
+          <h3 id="t-TIN401">Thiết kế Web</h3>
+          <p>HTML5 ngữ nghĩa, form, CSS layout (Flexbox, Grid) và responsive. Mỗi lab nộp report PDF và source GitHub.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>3</dd>
+            <dt>Lịch học</dt><dd>Thứ 2, Sáng · tiết 1–4</dd>
+            <dt>Phòng</dt><dd>B.204</dd>
+            <dt>Đánh giá</dt><dd>Đồ án + vấn đáp</dd>
+            <dt>Hạn tới</dt><dd>28/11 · Nộp WD-Lab03</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 70%"></span></span> Hoàn thành 70% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-tin" id="TIN402" aria-labelledby="t-TIN402">
+          <img src="assets/tin.svg" alt="Biểu tượng nhóm Tin học" width="56" height="56">
+          <p class="detail-code">TIN402 · Tin học</p>
+          <h3 id="t-TIN402">Học máy</h3>
+          <p>Hồi quy, phân loại, cây quyết định, đánh giá mô hình; đồ án nhóm 3 người trên tập dữ liệu mở.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>4</dd>
+            <dt>Lịch học</dt><dd>Thứ 3, Chiều · tiết 6–9</dd>
+            <dt>Phòng</dt><dd>C.301</dd>
+            <dt>Đánh giá</dt><dd>Tự luận + đồ án</dd>
+            <dt>Hạn tới</dt><dd>05/12 · Báo cáo đồ án nhóm</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 55%"></span></span> Hoàn thành 55% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-tin" id="TIN403" aria-labelledby="t-TIN403">
+          <img src="assets/tin.svg" alt="Biểu tượng nhóm Tin học" width="56" height="56">
+          <p class="detail-code">TIN403 · Tin học</p>
+          <h3 id="t-TIN403">Cơ sở dữ liệu nâng cao</h3>
+          <p>Chỉ mục, tối ưu truy vấn, giao tác và khóa; thực hành trên hệ quản trị SQL tại phòng máy.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>3</dd>
+            <dt>Lịch học</dt><dd>Thứ 5, Sáng · tiết 1–4</dd>
+            <dt>Phòng</dt><dd>Lab I.12</dd>
+            <dt>Đánh giá</dt><dd>Thực hành trên máy</dd>
+            <dt>Hạn tới</dt><dd>02/12 · Bài thực hành 4</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 60%"></span></span> Hoàn thành 60% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-tin" id="TIN404" aria-labelledby="t-TIN404">
+          <img src="assets/tin.svg" alt="Biểu tượng nhóm Tin học" width="56" height="56">
+          <p class="detail-code">TIN404 · Tin học</p>
+          <h3 id="t-TIN404">Xử lý ảnh số</h3>
+          <p>Biến đổi điểm ảnh, lọc không gian, biến đổi Fourier, phát hiện biên và phân đoạn ảnh.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>3</dd>
+            <dt>Lịch học</dt><dd>Thứ 6, Chiều · tiết 6–9</dd>
+            <dt>Phòng</dt><dd>Lab I.14</dd>
+            <dt>Đánh giá</dt><dd>Đồ án cá nhân</dd>
+            <dt>Hạn tới</dt><dd>12/12 · Nộp đề cương đồ án</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 40%"></span></span> Hoàn thành 40% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-toan" id="TOA301" aria-labelledby="t-TOA301">
+          <img src="assets/toan.svg" alt="Biểu tượng nhóm Toán học" width="56" height="56">
+          <p class="detail-code">TOA301 · Toán học</p>
+          <h3 id="t-TOA301">Giải tích số</h3>
+          <p>Sai số, nội suy, tích phân số, giải gần đúng phương trình và hệ phương trình tuyến tính.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>3</dd>
+            <dt>Lịch học</dt><dd>Thứ 2, Chiều · tiết 6–9</dd>
+            <dt>Phòng</dt><dd>C.105</dd>
+            <dt>Đánh giá</dt><dd>Tự luận</dd>
+            <dt>Hạn tới</dt><dd>25/11 · Bài tập chương 4</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 65%"></span></span> Hoàn thành 65% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-toan" id="TOA302" aria-labelledby="t-TOA302">
+          <img src="assets/toan.svg" alt="Biểu tượng nhóm Toán học" width="56" height="56">
+          <p class="detail-code">TOA302 · Toán học</p>
+          <h3 id="t-TOA302">Xác suất thống kê ứng dụng</h3>
+          <p>Biến ngẫu nhiên, ước lượng, kiểm định giả thuyết và hồi quy tuyến tính trên dữ liệu thực tế.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>3</dd>
+            <dt>Lịch học</dt><dd>Thứ 4, Sáng · tiết 1–4</dd>
+            <dt>Phòng</dt><dd>C.207</dd>
+            <dt>Đánh giá</dt><dd>Trắc nghiệm + tự luận</dd>
+            <dt>Hạn tới</dt><dd>27/11 · Kiểm tra giữa kỳ</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 75%"></span></span> Hoàn thành 75% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-toan" id="TOA303" aria-labelledby="t-TOA303">
+          <img src="assets/toan.svg" alt="Biểu tượng nhóm Toán học" width="56" height="56">
+          <p class="detail-code">TOA303 · Toán học</p>
+          <h3 id="t-TOA303">Tối ưu hóa</h3>
+          <p>Quy hoạch tuyến tính, phương pháp đơn hình, bài toán đối ngẫu và tối ưu không ràng buộc.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>3</dd>
+            <dt>Lịch học</dt><dd>Thứ 7, Sáng · tiết 1–4</dd>
+            <dt>Phòng</dt><dd>C.105</dd>
+            <dt>Đánh giá</dt><dd>Tự luận</dd>
+            <dt>Hạn tới</dt><dd>04/12 · Bài tập quy hoạch tuyến tính</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 50%"></span></span> Hoàn thành 50% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-toan" id="TOA304" aria-labelledby="t-TOA304">
+          <img src="assets/toan.svg" alt="Biểu tượng nhóm Toán học" width="56" height="56">
+          <p class="detail-code">TOA304 · Toán học</p>
+          <h3 id="t-TOA304">Lý thuyết đồ thị</h3>
+          <p>Đường đi, cây khung, luồng cực đại, tô màu đồ thị và các thuật toán tìm kiếm.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>3</dd>
+            <dt>Lịch học</dt><dd>Thứ 4, Chiều · tiết 6–9</dd>
+            <dt>Phòng</dt><dd>B.110</dd>
+            <dt>Đánh giá</dt><dd>Tự luận</dd>
+            <dt>Hạn tới</dt><dd>09/12 · Seminar nhóm</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 45%"></span></span> Hoàn thành 45% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-dc" id="DCB201" aria-labelledby="t-DCB201">
+          <img src="assets/dai-cuong.svg" alt="Biểu tượng nhóm Đại cương" width="56" height="56">
+          <p class="detail-code">DCB201 · Đại cương</p>
+          <h3 id="t-DCB201">Tiếng Anh chuyên ngành</h3>
+          <p>Đọc tài liệu kỹ thuật, viết tóm tắt bài báo và trình bày ngắn bằng tiếng Anh.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>2</dd>
+            <dt>Lịch học</dt><dd>Thứ 3, Sáng · tiết 1–4</dd>
+            <dt>Phòng</dt><dd>A.402</dd>
+            <dt>Đánh giá</dt><dd>Vấn đáp + viết</dd>
+            <dt>Hạn tới</dt><dd>01/12 · Thuyết trình 5 phút</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 80%"></span></span> Hoàn thành 80% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-dc" id="DCB202" aria-labelledby="t-DCB202">
+          <img src="assets/dai-cuong.svg" alt="Biểu tượng nhóm Đại cương" width="56" height="56">
+          <p class="detail-code">DCB202 · Đại cương</p>
+          <h3 id="t-DCB202">Kỹ năng thuyết trình</h3>
+          <p>Xây dựng bố cục bài nói, thiết kế slide, luyện giọng và trả lời câu hỏi.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>2</dd>
+            <dt>Lịch học</dt><dd>Thứ 5, Chiều · tiết 6–9</dd>
+            <dt>Phòng</dt><dd>A.305</dd>
+            <dt>Đánh giá</dt><dd>Thuyết trình nhóm</dd>
+            <dt>Hạn tới</dt><dd>26/11 · Nộp slide nhóm</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 90%"></span></span> Hoàn thành 90% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+        <article class="detail g-dc" id="DCB203" aria-labelledby="t-DCB203">
+          <img src="assets/dai-cuong.svg" alt="Biểu tượng nhóm Đại cương" width="56" height="56">
+          <p class="detail-code">DCB203 · Đại cương</p>
+          <h3 id="t-DCB203">Pháp luật đại cương</h3>
+          <p>Nhà nước và pháp luật, các ngành luật cơ bản, quyền và nghĩa vụ của công dân.</p>
+          <dl>
+            <dt>Tín chỉ</dt><dd>2</dd>
+            <dt>Lịch học</dt><dd>Thứ 6, Sáng · tiết 1–4</dd>
+            <dt>Phòng</dt><dd>Hội trường A</dd>
+            <dt>Đánh giá</dt><dd>Trắc nghiệm</dd>
+            <dt>Hạn tới</dt><dd>15/12 · Ôn tập cuối kỳ</dd>
+          </dl>
+          <p class="detail-progress"><span class="meter"><span style="width: 30%"></span></span> Hoàn thành 30% khối lượng</p>
+          <a class="close" href="#danh-sach">Đóng chi tiết ×</a>
+        </article>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <p><b>StudyDesk</b> – sổ tay học phần cho sinh viên Toán – Tin học. Dữ liệu mẫu, chỉ HTML + CSS.</p>
+    <p>WDLab03 · Phần 2</p>
+  </footer>
+</body>
+</html>

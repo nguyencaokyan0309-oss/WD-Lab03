@@ -16,7 +16,7 @@
   --ochre: #e0a83a;        /* vàng tường thuộc địa */
   --green: #2f5d50;        /* xanh lá cửa chớp */
   --night: #18222b;
-  --serif: Georgia, "Times New Roman", serif;
+  --serif: Cambria, "Times New Roman", serif;   /* font có đủ dấu tiếng Việt */
   --sans: "Segoe UI", Roboto, Arial, sans-serif;
   --radius: 6px;
   --gap: clamp(16px, 2.4vw, 28px);
@@ -166,7 +166,7 @@ main { width: var(--page); margin: 0 auto; }
   pointer-events: none;           /* bấm xuyên qua để mở ảnh */
 }
 .photo-info h3 { font-size: 19px; margin: 0 0 4px; }
-.photo-info p { margin: 0; font-size: 13px; color: #e8e2d6; }
+.photo-info p { margin: 0; font-size: 13px; color: #e8e2d6; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .chip { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 3px; margin-right: 4px; color: #fff; }
 .chip-di-san { background: var(--terracotta); }
 .chip-chung-cu { background: var(--green); }

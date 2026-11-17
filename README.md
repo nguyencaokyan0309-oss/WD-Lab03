@@ -13,4 +13,4 @@ Nguyễn Cao Kỳ Ân · MSSV 23110064 · Lớp 23TTH1 · Khoa Toán - Tin học
 Commit đầu tiên chứa nguyên bản PhotoNest của Instruction để đối chiếu Before/After trong lịch sử Git.
 Cả hai ứng dụng chỉ dùng HTML5 + CSS, chạy offline bằng cách mở `index.html` hoặc `index.html` ở thư mục gốc.
 
-Ghi chú: một phần mã HTML/CSS được viết với sự hỗ trợ của Claude (Anthropic); em đã kiểm tra, chỉnh sửa và giải thích lại toàn bộ trong report. Ảnh minh họa của hai app do em tạo bằng công cụ AI tạo ảnh theo prompt trong `tools/image-prompts.md`, không phải ảnh chụp thật. Bảng màu lấy từ Kanagawa (rebelot/kanagawa.nvim) và Rosé Pine (rose-pine/neovim); font từ Google Fonts (SIL OFL).
+Ghi chú: một phần mã HTML/CSS được viết với sự hỗ trợ của Claude (Anthropic); em đã kiểm tra, chỉnh sửa và giải thích lại toàn bộ trong report. Ảnh minh họa của hai app do em tạo bằng ChatGPT (OpenAI, tính năng tạo ảnh) ngày 17/11/2026 theo prompt trong `tools/image-prompts.md`, không phải ảnh chụp thật. Bảng màu lấy từ Kanagawa (rebelot/kanagawa.nvim) và Rosé Pine (rose-pine/neovim); font từ Google Fonts (SIL OFL).

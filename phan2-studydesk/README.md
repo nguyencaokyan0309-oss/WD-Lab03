@@ -10,4 +10,4 @@ Phần 2 của WDLab03: ứng dụng quản lý mới, theo dõi 11 học phần
 | `xac-nhan.html` | Trang thông báo "Đã ghi nhận thông tin" (không lưu dữ liệu) |
 
 Chỉ dùng HTML5 + CSS (`css/style.css`), không JavaScript, không backend. Mở `index.html` trực tiếp (offline) hoặc qua `http://localhost/WD-Lab03/phan2-studydesk/`.
-Dữ liệu học phần, mã, phòng và hạn nộp là dữ liệu mẫu tự đặt. Ảnh minh họa và 3 sticker nhóm trong `assets/` (WebP) tạo bằng AI theo prompt trong `../tools/image-prompts.md`; `logo.svg` tự vẽ.
+Dữ liệu học phần, mã, phòng và hạn nộp là dữ liệu mẫu tự đặt. Ảnh minh họa và 3 sticker nhóm trong `assets/` (WebP) tạo bằng ChatGPT (OpenAI) theo prompt trong `../tools/image-prompts.md`; `logo.svg` tự vẽ.

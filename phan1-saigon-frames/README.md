@@ -16,7 +16,7 @@ phan1-saigon-frames/
 └── assets/
     ├── logo.svg
     ├── fonts/          # Fraunces, Be Vietnam Pro, IBM Plex Mono (OFL) – chạy offline
-    └── photos/         # 12 ảnh minh họa WebP tạo bằng AI (prompt: ../tools/image-prompts.md)
+    └── photos/         # 12 ảnh minh họa WebP tạo bằng ChatGPT (prompt: ../tools/image-prompts.md)
 ```
 
-Ảnh là tranh minh họa phong cách khắc gỗ/risograph tạo bằng AI, lấy cảm hứng từ các công trình ở TP.HCM; không phải ảnh chụp thật, chi tiết công trình có thể khác thực tế.
+Ảnh là tranh minh họa phong cách khắc gỗ/risograph tạo bằng ChatGPT (OpenAI), lấy cảm hứng từ các công trình ở TP.HCM; không phải ảnh chụp thật, chi tiết công trình có thể khác thực tế.

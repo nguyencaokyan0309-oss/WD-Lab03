@@ -1,39 +1,637 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="PhotoNest — Thư viện ảnh cá nhân"><title>PhotoNest | Thư viện ảnh</title><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Saigon Frames – sổ ảnh kiến trúc Sài Gòn, cá nhân hóa từ PhotoNest (WDLab03).">
+  <title>Saigon Frames | Sổ ảnh kiến trúc Sài Gòn</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<a class="skip-link" href="#gallery">Đến thư viện ảnh</a>
-<div class="app">
-<aside class="sidebar"><a class="brand" href="index.html"><span class="brand-icon">◈</span><span>photo<b>nest</b><small>PHOTO LIBRARY</small></span></a><p class="nav-label">KHÔNG GIAN CỦA BẠN</p><nav class="nav-links" aria-label="Điều hướng"><a class="nav-active" href="#gallery"><span>▦</span> Thư viện ảnh</a><a href="#collections"><span>▤</span> Bộ sưu tập</a><a href="#add-photo"><span>⊕</span> Thêm ảnh</a></nav><p class="nav-label">BỘ SƯU TẬP</p><div class="side-collections"><a href="#collections"><span class="dot coral"></span> Du lịch <small>04</small></a><a href="#collections"><span class="dot aqua"></span> Thiên nhiên <small>04</small></a><a href="#collections"><span class="dot purple"></span> Thành phố <small>02</small></a><a href="#collections"><span class="dot yellow"></span> Đời sống <small>02</small></a></div><div class="sidebar-end"><span class="sidebar-end-icon">✦</span><strong>Những khoảnh khắc đẹp</strong><p>Giữ cảm hứng luôn trong tầm mắt.</p></div></aside>
-<div class="main"><header class="topbar"><div class="breadcrumbs">Không gian của tôi <span>/</span> <b>Thư viện ảnh</b></div><div class="profile"><span class="status-dot"></span> Sẵn sàng ngoại tuyến <span class="avatar">PN</span></div></header>
-<main class="content"><section class="hero"><div class="hero-copy"><span class="overline">YOUR PERSONAL PHOTO SPACE</span><h1>Lưu giữ những<br><em>khoảnh khắc đẹp.</em></h1><p>Tất cả hình ảnh yêu thích trong một không gian gọn gàng, dễ tìm và dễ xem.</p><a class="btn btn-primary" href="#add-photo">＋ Thêm ảnh mới</a></div><div class="hero-art" aria-hidden="true"><img class="hero-back" src="assets/blooming-days.svg" alt=""><img class="hero-front" src="assets/coastal-dream.svg" alt=""><span class="spark">✳</span></div></section>
-<section class="summary" aria-label="Tổng quan thư viện"><div class="summary-item"><span class="summary-icon icon-one">▧</span><div><strong>12</strong><p>Hình ảnh</p></div></div><div class="summary-item"><span class="summary-icon icon-two">▤</span><div><strong>04</strong><p>Chủ đề</p></div></div><div class="summary-item"><span class="summary-icon icon-three">♡</span><div><strong>04</strong><p>Bộ sưu tập</p></div></div></section>
-<section class="library-section" id="gallery"><div class="section-head"><div><span class="overline">THƯ VIỆN ẢNH</span><h2>Tất cả hình ảnh <span class="count-badge">12 ảnh</span></h2><p>Chọn một chủ đề hoặc nhấn vào hình để xem chi tiết.</p></div><a href="#add-photo" class="quiet-action">＋ Thêm ảnh</a></div><div class="filter-wrap"><input class="filter-input" type="radio" id="filter-all" name="filter" checked><input class="filter-input" type="radio" id="filter-nature" name="filter" ><input class="filter-input" type="radio" id="filter-travel" name="filter" ><input class="filter-input" type="radio" id="filter-city" name="filter" ><input class="filter-input" type="radio" id="filter-life" name="filter" ><div class="filter-bar" role="group" aria-label="Lọc theo chủ đề"><label for="filter-all">Tất cả</label><label for="filter-nature">Thiên nhiên</label><label for="filter-travel">Du lịch</label><label for="filter-city">Thành phố</label><label for="filter-life">Đời sống</label></div><div class="gallery-grid"><article class="photo-card category-nature"><a class="photo-preview" href="#photo-1" aria-label="Xem ảnh Golden Hour"><img src="assets/golden-hour.svg" alt="Golden Hour" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Golden Hour</h3><p>Thiên nhiên</p></div><a href="assets/golden-hour.svg" download="golden-hour.svg" class="download-link" aria-label="Tải Golden Hour" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-travel"><a class="photo-preview" href="#photo-2" aria-label="Xem ảnh Coastal Dream"><img src="assets/coastal-dream.svg" alt="Coastal Dream" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Coastal Dream</h3><p>Du lịch</p></div><a href="assets/coastal-dream.svg" download="coastal-dream.svg" class="download-link" aria-label="Tải Coastal Dream" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-nature"><a class="photo-preview" href="#photo-3" aria-label="Xem ảnh Blooming Days"><img src="assets/blooming-days.svg" alt="Blooming Days" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Blooming Days</h3><p>Thiên nhiên</p></div><a href="assets/blooming-days.svg" download="blooming-days.svg" class="download-link" aria-label="Tải Blooming Days" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-city"><a class="photo-preview" href="#photo-4" aria-label="Xem ảnh City Lights"><img src="assets/city-lights.svg" alt="City Lights" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>City Lights</h3><p>Thành phố</p></div><a href="assets/city-lights.svg" download="city-lights.svg" class="download-link" aria-label="Tải City Lights" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-travel"><a class="photo-preview" href="#photo-5" aria-label="Xem ảnh Mountain Air"><img src="assets/mountain-air.svg" alt="Mountain Air" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Mountain Air</h3><p>Du lịch</p></div><a href="assets/mountain-air.svg" download="mountain-air.svg" class="download-link" aria-label="Tải Mountain Air" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-life"><a class="photo-preview" href="#photo-6" aria-label="Xem ảnh Coffee Moment"><img src="assets/coffee-moment.svg" alt="Coffee Moment" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Coffee Moment</h3><p>Đời sống</p></div><a href="assets/coffee-moment.svg" download="coffee-moment.svg" class="download-link" aria-label="Tải Coffee Moment" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-travel"><a class="photo-preview" href="#photo-7" aria-label="Xem ảnh Desert Lines"><img src="assets/desert-lines.svg" alt="Desert Lines" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Desert Lines</h3><p>Du lịch</p></div><a href="assets/desert-lines.svg" download="desert-lines.svg" class="download-link" aria-label="Tải Desert Lines" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-city"><a class="photo-preview" href="#photo-8" aria-label="Xem ảnh Blue Hour"><img src="assets/blue-hour.svg" alt="Blue Hour" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Blue Hour</h3><p>Thành phố</p></div><a href="assets/blue-hour.svg" download="blue-hour.svg" class="download-link" aria-label="Tải Blue Hour" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-nature"><a class="photo-preview" href="#photo-9" aria-label="Xem ảnh Spring Garden"><img src="assets/spring-garden.svg" alt="Spring Garden" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Spring Garden</h3><p>Thiên nhiên</p></div><a href="assets/spring-garden.svg" download="spring-garden.svg" class="download-link" aria-label="Tải Spring Garden" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-life"><a class="photo-preview" href="#photo-10" aria-label="Xem ảnh Urban Story"><img src="assets/urban-story.svg" alt="Urban Story" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Urban Story</h3><p>Đời sống</p></div><a href="assets/urban-story.svg" download="urban-story.svg" class="download-link" aria-label="Tải Urban Story" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-nature"><a class="photo-preview" href="#photo-11" aria-label="Xem ảnh Quiet Lake"><img src="assets/quiet-lake.svg" alt="Quiet Lake" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Quiet Lake</h3><p>Thiên nhiên</p></div><a href="assets/quiet-lake.svg" download="quiet-lake.svg" class="download-link" aria-label="Tải Quiet Lake" title="Tải ảnh">↓</a></div></article>
-<article class="photo-card category-travel"><a class="photo-preview" href="#photo-12" aria-label="Xem ảnh Weekend Trip"><img src="assets/weekend-trip.svg" alt="Weekend Trip" width="800" height="600" loading="lazy"><span class="view-indicator">↗</span></a><div class="photo-caption"><div><h3>Weekend Trip</h3><p>Du lịch</p></div><a href="assets/weekend-trip.svg" download="weekend-trip.svg" class="download-link" aria-label="Tải Weekend Trip" title="Tải ảnh">↓</a></div></article></div></div></section>
-<section class="collections-section" id="collections"><div class="section-head"><div><span class="overline">BỘ SƯU TẬP</span><h2>Góc ảnh yêu thích</h2><p>Những câu chuyện được sắp xếp theo từng chủ đề.</p></div></div><div class="collection-grid"><a class="collection-tile tile-travel" href="#gallery"><span>04 HÌNH ẢNH</span><h3>Du lịch</h3><p>Những chuyến đi đáng nhớ</p><b>↗</b></a><a class="collection-tile tile-nature" href="#gallery"><span>04 HÌNH ẢNH</span><h3>Thiên nhiên</h3><p>Sắc màu của đất trời</p><b>↗</b></a><a class="collection-tile tile-city" href="#gallery"><span>02 HÌNH ẢNH</span><h3>Thành phố</h3><p>Nhịp sống phố thị</p><b>↗</b></a><a class="collection-tile tile-life" href="#gallery"><span>02 HÌNH ẢNH</span><h3>Đời sống</h3><p>Điều giản dị quanh ta</p><b>↗</b></a></div></section>
-<section class="form-section" id="add-photo"><div class="section-head"><div><span class="overline">THÊM ẢNH</span><h2>Thông tin hình ảnh</h2><p>Điền thông tin và gửi yêu cầu thêm ảnh vào thư viện.</p></div></div><div class="form-layout"><form class="photo-form" action="form-result.html" method="get"><div class="field"><label for="photo-file">Chọn hình ảnh <span>*</span></label><div class="file-box"><span class="file-symbol">↥</span><div><strong>Chọn ảnh từ thiết bị</strong><small>PNG, JPG, WEBP hoặc SVG</small></div><input type="file" id="photo-file" name="photo" accept="image/*" required></div></div><div class="field-row"><div class="field"><label for="photo-title">Tên ảnh <span>*</span></label><input id="photo-title" name="title" type="text" placeholder="Nhập tên hình ảnh" minlength="2" maxlength="80" required></div><div class="field"><label for="photo-category">Chủ đề <span>*</span></label><select id="photo-category" name="category" required><option value="" disabled selected>Chọn chủ đề</option><option>Thiên nhiên</option><option>Du lịch</option><option>Thành phố</option><option>Đời sống</option></select></div></div><div class="field-row"><div class="field"><label for="photo-date">Ngày chụp</label><input id="photo-date" name="date" type="date"></div><div class="field"><label for="photo-author">Người chụp</label><input id="photo-author" name="author" type="text" placeholder="Tên người chụp"></div></div><div class="field"><label for="photo-description">Mô tả</label><textarea id="photo-description" name="description" rows="4" maxlength="500" placeholder="Thêm một vài dòng về bức ảnh..."></textarea></div><fieldset class="privacy-field"><legend>Chế độ hiển thị</legend><label><input type="radio" name="visibility" value="private" checked> Cá nhân</label><label><input type="radio" name="visibility" value="public"> Công khai</label></fieldset><div class="form-actions"><button type="reset" class="btn btn-secondary">Làm mới</button><button type="submit" class="btn btn-primary">Gửi thông tin ↗</button></div></form><aside class="form-aside"><div class="aside-illustration"><img src="assets/quiet-lake.svg" alt="Phong cảnh hồ nước"></div><h3>Thêm một kỷ niệm mới</h3><p>Mỗi bức ảnh đều lưu giữ một câu chuyện riêng. Hãy đặt tên và mô tả để dễ dàng nhận ra khoảnh khắc đó.</p></aside></div></section>
-<footer class="footer"><span>◈ phot<b>nest</b></span><span>Không gian ảnh cá nhân</span></footer>
-</main></div></div>
-<section class="modal" id="photo-1" aria-label="Chi tiết Golden Hour"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/golden-hour.svg" alt="Golden Hour"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Golden Hour</h2><p>Thiên nhiên · SVG</p></div><a href="assets/golden-hour.svg" download="golden-hour.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-2" aria-label="Chi tiết Coastal Dream"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/coastal-dream.svg" alt="Coastal Dream"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Coastal Dream</h2><p>Du lịch · SVG</p></div><a href="assets/coastal-dream.svg" download="coastal-dream.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-3" aria-label="Chi tiết Blooming Days"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/blooming-days.svg" alt="Blooming Days"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Blooming Days</h2><p>Thiên nhiên · SVG</p></div><a href="assets/blooming-days.svg" download="blooming-days.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-4" aria-label="Chi tiết City Lights"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/city-lights.svg" alt="City Lights"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>City Lights</h2><p>Thành phố · SVG</p></div><a href="assets/city-lights.svg" download="city-lights.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-5" aria-label="Chi tiết Mountain Air"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/mountain-air.svg" alt="Mountain Air"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Mountain Air</h2><p>Du lịch · SVG</p></div><a href="assets/mountain-air.svg" download="mountain-air.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-6" aria-label="Chi tiết Coffee Moment"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/coffee-moment.svg" alt="Coffee Moment"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Coffee Moment</h2><p>Đời sống · SVG</p></div><a href="assets/coffee-moment.svg" download="coffee-moment.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-7" aria-label="Chi tiết Desert Lines"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/desert-lines.svg" alt="Desert Lines"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Desert Lines</h2><p>Du lịch · SVG</p></div><a href="assets/desert-lines.svg" download="desert-lines.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-8" aria-label="Chi tiết Blue Hour"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/blue-hour.svg" alt="Blue Hour"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Blue Hour</h2><p>Thành phố · SVG</p></div><a href="assets/blue-hour.svg" download="blue-hour.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-9" aria-label="Chi tiết Spring Garden"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/spring-garden.svg" alt="Spring Garden"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Spring Garden</h2><p>Thiên nhiên · SVG</p></div><a href="assets/spring-garden.svg" download="spring-garden.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-10" aria-label="Chi tiết Urban Story"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/urban-story.svg" alt="Urban Story"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Urban Story</h2><p>Đời sống · SVG</p></div><a href="assets/urban-story.svg" download="urban-story.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-11" aria-label="Chi tiết Quiet Lake"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/quiet-lake.svg" alt="Quiet Lake"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Quiet Lake</h2><p>Thiên nhiên · SVG</p></div><a href="assets/quiet-lake.svg" download="quiet-lake.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-<section class="modal" id="photo-12" aria-label="Chi tiết Weekend Trip"><a class="modal-shade" href="#gallery" aria-label="Đóng"></a><div class="modal-window"><a class="modal-close" href="#gallery" aria-label="Đóng">×</a><img src="assets/weekend-trip.svg" alt="Weekend Trip"><div class="modal-meta"><div><span class="overline">CHI TIẾT ẢNH</span><h2>Weekend Trip</h2><p>Du lịch · SVG</p></div><a href="assets/weekend-trip.svg" download="weekend-trip.svg" class="btn btn-primary">↓ Tải ảnh</a></div></div></section>
-</body></html>
+  <a class="skip-link" href="#thu-vien">Bỏ qua, đến thư viện ảnh</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="" width="40" height="40">
+      <span>Saigon <b>Frames</b><small>Sổ ảnh kiến trúc</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Điều hướng chính">
+      <a href="#thu-vien">Thư viện</a>
+      <a href="#dong-thoi-gian">Dòng thời gian</a>
+      <a href="#gui-anh">Gửi ảnh</a>
+    </nav>
+    <p class="header-meta"><span class="dot"></span> Offline · 12 khung hình</p>
+  </header>
+
+  <main id="noi-dung">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="overline">Sổ ảnh cá nhân · Sài Gòn 2026</p>
+        <h1 id="hero-title">Sài Gòn qua từng <em>khung cửa</em>.</h1>
+        <p>Mười hai khung hình về kiến trúc thành phố, từ bưu điện thời Pháp đến cây cầu mới bên sông. Mỗi ảnh ghi lại khu vực, giờ chụp và tiêu cự để lần sau quay lại chụp tiếp.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#thu-vien">Xem thư viện</a>
+          <a class="btn btn-ghost" href="#gui-anh">＋ Gửi khung hình</a>
+        </div>
+      </div>
+      <figure class="hero-feature">
+        <a href="#photo-08"><img src="assets/photos/thap-ben-song.svg" alt="Tòa tháp bên sông lúc giờ xanh" width="800" height="600"></a>
+        <figcaption><b>Ảnh của tuần</b> Tòa tháp bên sông · Bình Thạnh · 18:10</figcaption>
+      </figure>
+    </section>
+
+    <dl class="stats-ribbon" aria-label="Tổng quan sổ ảnh">
+      <div><dt>Khung hình</dt><dd>12</dd></div>
+      <div><dt>Nhóm kiến trúc</dt><dd>04</dd></div>
+      <div><dt>Khu vực</dt><dd>05</dd></div>
+      <div><dt>Giai đoạn</dt><dd>1880–2022</dd></div>
+    </dl>
+
+    <section class="library" id="thu-vien" aria-labelledby="lib-title">
+      <div class="section-head">
+        <p class="overline">01 · Thư viện</p>
+        <h2 id="lib-title">Khung hình theo nhóm kiến trúc</h2>
+        <p>Chọn một nhóm để lọc bằng CSS, bấm vào ảnh để mở thẻ chi tiết.</p>
+      </div>
+      <div class="filter-scope">
+        <input class="filter-input" type="radio" name="loc" id="loc-all" checked>
+        <input class="filter-input" type="radio" name="loc" id="loc-di-san">
+        <input class="filter-input" type="radio" name="loc" id="loc-chung-cu">
+        <input class="filter-input" type="radio" name="loc" id="loc-hien-dai">
+        <input class="filter-input" type="radio" name="loc" id="loc-hem-pho">
+        <div class="filter-tabs" role="group" aria-label="Lọc theo nhóm kiến trúc">
+          <label for="loc-all">Tất cả <span>12</span></label>
+          <label for="loc-di-san">Di sản Pháp <span>04</span></label>
+          <label for="loc-chung-cu">Chung cư cũ <span>03</span></label>
+          <label for="loc-hien-dai">Hiện đại <span>03</span></label>
+          <label for="loc-hem-pho">Hẻm &amp; phố <span>02</span></label>
+        </div>
+        <div class="photo-grid">
+          <article class="photo-card cat-di-san photo-card--wide">
+            <a class="photo-link" href="#photo-01" aria-label="Xem chi tiết Bưu điện giữa trưa">
+              <img src="assets/photos/buu-dien.svg" alt="Bưu điện giữa trưa – minh họa lấy cảm hứng từ Bưu điện Thành phố" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.01</span>
+            </a>
+            <div class="photo-info">
+              <h3>Bưu điện giữa trưa</h3>
+              <p><span class="chip chip-di-san">Di sản Pháp</span> Quận 1 · 1891</p>
+            </div>
+          </article>
+          <article class="photo-card cat-di-san photo-card--tall">
+            <a class="photo-link" href="#photo-02" aria-label="Xem chi tiết Hai tháp chuông">
+              <img src="assets/photos/hai-thap-chuong.svg" alt="Hai tháp chuông – minh họa lấy cảm hứng từ Nhà thờ Đức Bà" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.02</span>
+            </a>
+            <div class="photo-info">
+              <h3>Hai tháp chuông</h3>
+              <p><span class="chip chip-di-san">Di sản Pháp</span> Quận 1 · 1880</p>
+            </div>
+          </article>
+          <article class="photo-card cat-di-san">
+            <a class="photo-link" href="#photo-03" aria-label="Xem chi tiết Nhà hát lúc chiều">
+              <img src="assets/photos/nha-hat.svg" alt="Nhà hát lúc chiều – minh họa lấy cảm hứng từ Nhà hát Thành phố" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.03</span>
+            </a>
+            <div class="photo-info">
+              <h3>Nhà hát lúc chiều</h3>
+              <p><span class="chip chip-di-san">Di sản Pháp</span> Quận 1 · 1900</p>
+            </div>
+          </article>
+          <article class="photo-card cat-di-san">
+            <a class="photo-link" href="#photo-04" aria-label="Xem chi tiết Cổng chợ phía Nam">
+              <img src="assets/photos/cong-cho.svg" alt="Cổng chợ phía Nam – minh họa lấy cảm hứng từ Chợ Bến Thành" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.04</span>
+            </a>
+            <div class="photo-info">
+              <h3>Cổng chợ phía Nam</h3>
+              <p><span class="chip chip-di-san">Di sản Pháp</span> Quận 1 · 1914</p>
+            </div>
+          </article>
+          <article class="photo-card cat-chung-cu photo-card--tall">
+            <a class="photo-link" href="#photo-05" aria-label="Xem chi tiết Chung cư cà phê">
+              <img src="assets/photos/chung-cu-ca-phe.svg" alt="Chung cư cà phê – minh họa lấy cảm hứng từ Chung cư 42 Nguyễn Huệ" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.05</span>
+            </a>
+            <div class="photo-info">
+              <h3>Chung cư cà phê</h3>
+              <p><span class="chip chip-chung-cu">Chung cư cũ</span> Quận 1 · Thập niên 1960</p>
+            </div>
+          </article>
+          <article class="photo-card cat-chung-cu">
+            <a class="photo-link" href="#photo-06" aria-label="Xem chi tiết Ban công xanh">
+              <img src="assets/photos/ban-cong-xanh.svg" alt="Ban công xanh – minh họa lấy cảm hứng từ Chung cư cũ ven kênh" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.06</span>
+            </a>
+            <div class="photo-info">
+              <h3>Ban công xanh</h3>
+              <p><span class="chip chip-chung-cu">Chung cư cũ</span> Bình Thạnh · Thập niên 1970</p>
+            </div>
+          </article>
+          <article class="photo-card cat-chung-cu">
+            <a class="photo-link" href="#photo-07" aria-label="Xem chi tiết Cầu thang xoắn">
+              <img src="assets/photos/cau-thang-xoan.svg" alt="Cầu thang xoắn – minh họa lấy cảm hứng từ Chung cư cũ Chợ Lớn" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.07</span>
+            </a>
+            <div class="photo-info">
+              <h3>Cầu thang xoắn</h3>
+              <p><span class="chip chip-chung-cu">Chung cư cũ</span> Quận 5 · Thập niên 1960</p>
+            </div>
+          </article>
+          <article class="photo-card cat-hien-dai photo-card--wide">
+            <a class="photo-link" href="#photo-08" aria-label="Xem chi tiết Tòa tháp bên sông">
+              <img src="assets/photos/thap-ben-song.svg" alt="Tòa tháp bên sông – minh họa lấy cảm hứng từ Tòa tháp ven sông Sài Gòn" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.08</span>
+            </a>
+            <div class="photo-info">
+              <h3>Tòa tháp bên sông</h3>
+              <p><span class="chip chip-hien-dai">Hiện đại</span> Bình Thạnh · 2018</p>
+            </div>
+          </article>
+          <article class="photo-card cat-hien-dai">
+            <a class="photo-link" href="#photo-09" aria-label="Xem chi tiết Tháp búp sen">
+              <img src="assets/photos/thap-bup-sen.svg" alt="Tháp búp sen – minh họa lấy cảm hứng từ Tòa tháp hình búp sen" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.09</span>
+            </a>
+            <div class="photo-info">
+              <h3>Tháp búp sen</h3>
+              <p><span class="chip chip-hien-dai">Hiện đại</span> Quận 1 · 2010</p>
+            </div>
+          </article>
+          <article class="photo-card cat-hien-dai photo-card--wide">
+            <a class="photo-link" href="#photo-10" aria-label="Xem chi tiết Cầu dây văng về đêm">
+              <img src="assets/photos/cau-day-vang.svg" alt="Cầu dây văng về đêm – minh họa lấy cảm hứng từ Cầu Ba Son" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.10</span>
+            </a>
+            <div class="photo-info">
+              <h3>Cầu dây văng về đêm</h3>
+              <p><span class="chip chip-hien-dai">Hiện đại</span> Thủ Đức · 2022</p>
+            </div>
+          </article>
+          <article class="photo-card cat-hem-pho photo-card--tall">
+            <a class="photo-link" href="#photo-11" aria-label="Xem chi tiết Hẻm chiều">
+              <img src="assets/photos/hem-chieu.svg" alt="Hẻm chiều – minh họa lấy cảm hứng từ Hẻm nhỏ Quận 3" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.11</span>
+            </a>
+            <div class="photo-info">
+              <h3>Hẻm chiều</h3>
+              <p><span class="chip chip-hem-pho">Hẻm &amp; phố</span> Quận 3 · —</p>
+            </div>
+          </article>
+          <article class="photo-card cat-hem-pho">
+            <a class="photo-link" href="#photo-12" aria-label="Xem chi tiết Phố đi bộ đêm">
+              <img src="assets/photos/pho-di-bo.svg" alt="Phố đi bộ đêm – minh họa lấy cảm hứng từ Phố đi bộ Nguyễn Huệ" width="800" height="600" loading="lazy">
+              <span class="photo-no">No.12</span>
+            </a>
+            <div class="photo-info">
+              <h3>Phố đi bộ đêm</h3>
+              <p><span class="chip chip-hem-pho">Hẻm &amp; phố</span> Quận 1 · —</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" id="dong-thoi-gian" aria-labelledby="tl-title">
+      <div class="section-head">
+        <p class="overline">02 · Dòng thời gian</p>
+        <h2 id="tl-title">Bốn lớp kiến trúc của thành phố</h2>
+        <p>Các nhóm ảnh xếp theo thời điểm công trình ra đời.</p>
+      </div>
+      <ol class="era-list">
+        <li class="era">
+          <span class="era-time">1880 – 1914</span>
+          <h3>Di sản Pháp</h3>
+          <p>Gạch đỏ, vòm cửa, tháp đồng hồ: dấu vết đô thị thuộc địa ở trung tâm Quận 1.</p>
+          <a href="#photo-02">Xem khung hình No.02 →</a>
+        </li>
+        <li class="era">
+          <span class="era-time">1960 – 1970</span>
+          <h3>Chung cư cũ</h3>
+          <p>Khối bê tông nhiều tầng, ban công lặp lại, nay thành nơi ở, quán cà phê, cửa hàng.</p>
+          <a href="#photo-05">Xem khung hình No.05 →</a>
+        </li>
+        <li class="era">
+          <span class="era-time">2010 – 2022</span>
+          <h3>Hiện đại</h3>
+          <p>Tháp kính cao tầng và cầu mới, đẹp nhất vào giờ xanh khi đèn vừa bật.</p>
+          <a href="#photo-10">Xem khung hình No.10 →</a>
+        </li>
+        <li class="era">
+          <span class="era-time">Mỗi ngày</span>
+          <h3>Hẻm &amp; phố</h3>
+          <p>Nhịp sống thường ngày len giữa các công trình: hẻm nhỏ, phố đi bộ, xe máy.</p>
+          <a href="#photo-11">Xem khung hình No.11 →</a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="submit" id="gui-anh" aria-labelledby="form-title">
+      <div class="section-head">
+        <p class="overline">03 · Gửi ảnh</p>
+        <h2 id="form-title">Gửi một khung hình mới</h2>
+        <p>Biểu mẫu chỉ kiểm tra dữ liệu và mở trang xác nhận, ảnh không được lưu vào thư viện.</p>
+      </div>
+      <div class="submit-layout">
+        <form class="frame-form" action="form-result.html" method="get">
+          <fieldset class="step">
+            <legend><span>1</span> Ảnh</legend>
+            <div class="field">
+              <label for="photo-file">Tệp ảnh <abbr title="bắt buộc">*</abbr></label>
+              <input type="file" id="photo-file" name="photo" accept="image/*" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="photo-title">Tên khung hình <abbr title="bắt buộc">*</abbr></label>
+                <input type="text" id="photo-title" name="title" placeholder="VD: Mái vòm buổi sáng" minlength="3" maxlength="60" required>
+              </div>
+              <div class="field">
+                <label for="photo-group">Nhóm kiến trúc <abbr title="bắt buộc">*</abbr></label>
+                <select id="photo-group" name="group" required>
+                  <option value="" selected disabled>Chọn nhóm</option>
+                  <option value="di-san">Di sản Pháp</option>
+                  <option value="chung-cu">Chung cư cũ</option>
+                  <option value="hien-dai">Hiện đại</option>
+                  <option value="hem-pho">Hẻm &amp; phố</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><span>2</span> Địa điểm &amp; thời gian</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="photo-district">Khu vực <abbr title="bắt buộc">*</abbr></label>
+                <input type="text" id="photo-district" name="district" list="district-list" placeholder="VD: Quận 1" required>
+                <datalist id="district-list">
+                  <option value="Quận 1"><option value="Quận 3"><option value="Quận 5">
+                  <option value="Bình Thạnh"><option value="Thủ Đức">
+                </datalist>
+              </div>
+              <div class="field">
+                <label for="photo-date">Ngày chụp</label>
+                <input type="date" id="photo-date" name="date" min="2020-01-01" max="2026-12-31">
+              </div>
+            </div>
+            <div class="field">
+              <span class="field-label" id="light-label">Ánh sáng</span>
+              <div class="choice-cards" role="radiogroup" aria-labelledby="light-label">
+                <label class="choice"><input type="radio" name="light" value="sang" checked><span>☀ Sáng</span></label>
+                <label class="choice"><input type="radio" name="light" value="chieu"><span>◐ Chiều</span></label>
+                <label class="choice"><input type="radio" name="light" value="dem"><span>☾ Đêm</span></label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="step">
+            <legend><span>3</span> Ghi chú</legend>
+            <div class="field">
+              <span class="field-label" id="tag-label">Thẻ</span>
+              <div class="tag-boxes" role="group" aria-labelledby="tag-label">
+                <label><input type="checkbox" name="tag" value="doi-xung"> Đối xứng</label>
+                <label><input type="checkbox" name="tag" value="goc-rong"> Góc rộng</label>
+                <label><input type="checkbox" name="tag" value="nguoi"> Có người</label>
+                <label><input type="checkbox" name="tag" value="phan-chieu"> Phản chiếu</label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="photo-note">Câu chuyện khung hình</label>
+              <textarea id="photo-note" name="note" rows="4" maxlength="400" placeholder="Bạn đứng ở đâu, chờ ánh sáng thế nào..."></textarea>
+            </div>
+          </fieldset>
+          <div class="form-actions">
+            <button class="btn btn-ghost" type="reset">Xóa nhập</button>
+            <button class="btn btn-primary" type="submit">Gửi khung hình →</button>
+          </div>
+        </form>
+        <aside class="tips" aria-labelledby="tips-title">
+          <h3 id="tips-title">Mẹo chụp kiến trúc</h3>
+          <ol>
+            <li><b>Đứng thẳng trục</b> công trình để giữ đường dọc không bị nghiêng.</li>
+            <li><b>Chờ giờ xanh</b> khoảng 20 phút sau hoàng hôn cho ảnh nhà cao tầng.</li>
+            <li><b>Thêm một người</b> trong khung để thấy tỉ lệ công trình.</li>
+          </ol>
+          <img src="assets/photos/hem-chieu.svg" alt="Hẻm chiều với đèn lồng đỏ" width="800" height="600" loading="lazy">
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><b>Saigon Frames</b> · Cá nhân hóa từ PhotoNest (WDLab03)</p>
+    <p>Ảnh SVG tự vẽ bằng code · Chỉ HTML + CSS</p>
+  </footer>
+
+  <section class="lightbox" id="photo-01" aria-labelledby="lb-title-01">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/buu-dien.svg" alt="Bưu điện giữa trưa – minh họa lấy cảm hứng từ Bưu điện Thành phố">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.01 · Di sản Pháp</p>
+        <h2 id="lb-title-01">Bưu điện giữa trưa</h2>
+        <p class="lightbox-desc">Mặt tiền vàng với hàng vòm cửa đều nhau và chiếc đồng hồ ở trung tâm, chụp thẳng trục để giữ đối xứng.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Bưu điện Thành phố</dd>
+          <dt>Khu vực</dt><dd>Quận 1</dd>
+          <dt>Công trình</dt><dd>1891</dd>
+          <dt>Giờ chụp</dt><dd>11:40</dd>
+          <dt>Tiêu cự</dt><dd>24 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-12" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/buu-dien.svg" download="buu-dien.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-02" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-02" aria-labelledby="lb-title-02">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/hai-thap-chuong.svg" alt="Hai tháp chuông – minh họa lấy cảm hứng từ Nhà thờ Đức Bà">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.02 · Di sản Pháp</p>
+        <h2 id="lb-title-02">Hai tháp chuông</h2>
+        <p class="lightbox-desc">Gạch đỏ và hai tháp chuông nhọn trong nắng sớm, đặt máy thấp để tháp vươn cao trong khung dọc.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Nhà thờ Đức Bà</dd>
+          <dt>Khu vực</dt><dd>Quận 1</dd>
+          <dt>Công trình</dt><dd>1880</dd>
+          <dt>Giờ chụp</dt><dd>06:30</dd>
+          <dt>Tiêu cự</dt><dd>35 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-01" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/hai-thap-chuong.svg" download="hai-thap-chuong.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-03" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-03" aria-labelledby="lb-title-03">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/nha-hat.svg" alt="Nhà hát lúc chiều – minh họa lấy cảm hứng từ Nhà hát Thành phố">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.03 · Di sản Pháp</p>
+        <h2 id="lb-title-03">Nhà hát lúc chiều</h2>
+        <p class="lightbox-desc">Vòm cửa chính sáng đèn vàng khi trời chuyển cam, bậc thềm dẫn mắt vào trung tâm khung hình.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Nhà hát Thành phố</dd>
+          <dt>Khu vực</dt><dd>Quận 1</dd>
+          <dt>Công trình</dt><dd>1900</dd>
+          <dt>Giờ chụp</dt><dd>17:20</dd>
+          <dt>Tiêu cự</dt><dd>28 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-02" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/nha-hat.svg" download="nha-hat.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-04" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-04" aria-labelledby="lb-title-04">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/cong-cho.svg" alt="Cổng chợ phía Nam – minh họa lấy cảm hứng từ Chợ Bến Thành">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.04 · Di sản Pháp</p>
+        <h2 id="lb-title-04">Cổng chợ phía Nam</h2>
+        <p class="lightbox-desc">Tháp đồng hồ của cổng chợ và dòng xe máy buổi sáng, thể hiện nhịp sống quanh công trình cũ.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Chợ Bến Thành</dd>
+          <dt>Khu vực</dt><dd>Quận 1</dd>
+          <dt>Công trình</dt><dd>1914</dd>
+          <dt>Giờ chụp</dt><dd>07:15</dd>
+          <dt>Tiêu cự</dt><dd>24 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-03" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/cong-cho.svg" download="cong-cho.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-05" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-05" aria-labelledby="lb-title-05">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/chung-cu-ca-phe.svg" alt="Chung cư cà phê – minh họa lấy cảm hứng từ Chung cư 42 Nguyễn Huệ">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.05 · Chung cư cũ</p>
+        <h2 id="lb-title-05">Chung cư cà phê</h2>
+        <p class="lightbox-desc">Mỗi ô ban công là một quán nhỏ với biển hiệu nhiều màu, chụp chính diện để thấy nhịp lặp của các tầng.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Chung cư 42 Nguyễn Huệ</dd>
+          <dt>Khu vực</dt><dd>Quận 1</dd>
+          <dt>Công trình</dt><dd>Thập niên 1960</dd>
+          <dt>Giờ chụp</dt><dd>08:00</dd>
+          <dt>Tiêu cự</dt><dd>50 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-04" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/chung-cu-ca-phe.svg" download="chung-cu-ca-phe.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-06" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-06" aria-labelledby="lb-title-06">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/ban-cong-xanh.svg" alt="Ban công xanh – minh họa lấy cảm hứng từ Chung cư cũ ven kênh">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.06 · Chung cư cũ</p>
+        <h2 id="lb-title-06">Ban công xanh</h2>
+        <p class="lightbox-desc">Cây xanh mọc từ những ban công cũ làm mềm khối bê tông, màu tường xanh xám dịu mắt.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Chung cư cũ ven kênh</dd>
+          <dt>Khu vực</dt><dd>Bình Thạnh</dd>
+          <dt>Công trình</dt><dd>Thập niên 1970</dd>
+          <dt>Giờ chụp</dt><dd>10:10</dd>
+          <dt>Tiêu cự</dt><dd>35 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-05" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/ban-cong-xanh.svg" download="ban-cong-xanh.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-07" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-07" aria-labelledby="lb-title-07">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/cau-thang-xoan.svg" alt="Cầu thang xoắn – minh họa lấy cảm hứng từ Chung cư cũ Chợ Lớn">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.07 · Chung cư cũ</p>
+        <h2 id="lb-title-07">Cầu thang xoắn</h2>
+        <p class="lightbox-desc">Góc nhìn từ dưới lên giếng trời, các bậc cầu thang xếp thành nhịp cong như vân gỗ.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Chung cư cũ Chợ Lớn</dd>
+          <dt>Khu vực</dt><dd>Quận 5</dd>
+          <dt>Công trình</dt><dd>Thập niên 1960</dd>
+          <dt>Giờ chụp</dt><dd>09:30</dd>
+          <dt>Tiêu cự</dt><dd>16 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-06" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/cau-thang-xoan.svg" download="cau-thang-xoan.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-08" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-08" aria-labelledby="lb-title-08">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/thap-ben-song.svg" alt="Tòa tháp bên sông – minh họa lấy cảm hứng từ Tòa tháp ven sông Sài Gòn">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.08 · Hiện đại</p>
+        <h2 id="lb-title-08">Tòa tháp bên sông</h2>
+        <p class="lightbox-desc">Giờ xanh sau hoàng hôn, ánh đèn từ các tầng phản chiếu xuống mặt sông thành vệt dài.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Tòa tháp ven sông Sài Gòn</dd>
+          <dt>Khu vực</dt><dd>Bình Thạnh</dd>
+          <dt>Công trình</dt><dd>2018</dd>
+          <dt>Giờ chụp</dt><dd>18:10</dd>
+          <dt>Tiêu cự</dt><dd>70 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-07" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/thap-ben-song.svg" download="thap-ben-song.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-09" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-09" aria-labelledby="lb-title-09">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/thap-bup-sen.svg" alt="Tháp búp sen – minh họa lấy cảm hứng từ Tòa tháp hình búp sen">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.09 · Hiện đại</p>
+        <h2 id="lb-title-09">Tháp búp sen</h2>
+        <p class="lightbox-desc">Thân tháp thon dần lên đỉnh, sân đỗ trực thăng nhô ra như một cánh hoa trên nền trời trong.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Tòa tháp hình búp sen</dd>
+          <dt>Khu vực</dt><dd>Quận 1</dd>
+          <dt>Công trình</dt><dd>2010</dd>
+          <dt>Giờ chụp</dt><dd>12:00</dd>
+          <dt>Tiêu cự</dt><dd>35 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-08" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/thap-bup-sen.svg" download="thap-bup-sen.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-10" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-10" aria-labelledby="lb-title-10">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/cau-day-vang.svg" alt="Cầu dây văng về đêm – minh họa lấy cảm hứng từ Cầu Ba Son">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.10 · Hiện đại</p>
+        <h2 id="lb-title-10">Cầu dây văng về đêm</h2>
+        <p class="lightbox-desc">Trụ tháp một bên và các sợi cáp xòe hình quạt, đèn cầu in thành chấm vàng trên mặt nước.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Cầu Ba Son</dd>
+          <dt>Khu vực</dt><dd>Thủ Đức</dd>
+          <dt>Công trình</dt><dd>2022</dd>
+          <dt>Giờ chụp</dt><dd>20:30</dd>
+          <dt>Tiêu cự</dt><dd>24 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-09" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/cau-day-vang.svg" download="cau-day-vang.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-11" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-11" aria-labelledby="lb-title-11">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/hem-chieu.svg" alt="Hẻm chiều – minh họa lấy cảm hứng từ Hẻm nhỏ Quận 3">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.11 · Hẻm &amp; phố</p>
+        <h2 id="lb-title-11">Hẻm chiều</h2>
+        <p class="lightbox-desc">Con hẻm hẹp với đèn lồng đỏ, dây điện chằng chịt và chiếc xe máy chạy ngang khung hình.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Hẻm nhỏ Quận 3</dd>
+          <dt>Khu vực</dt><dd>Quận 3</dd>
+          <dt>Công trình</dt><dd>—</dd>
+          <dt>Giờ chụp</dt><dd>16:45</dd>
+          <dt>Tiêu cự</dt><dd>35 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-10" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/hem-chieu.svg" download="hem-chieu.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-12" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lightbox" id="photo-12" aria-labelledby="lb-title-12">
+    <a class="lightbox-shade" href="#thu-vien" aria-label="Đóng chi tiết"></a>
+    <div class="lightbox-window">
+      <figure class="lightbox-photo">
+        <img src="assets/photos/pho-di-bo.svg" alt="Phố đi bộ đêm – minh họa lấy cảm hứng từ Phố đi bộ Nguyễn Huệ">
+      </figure>
+      <div class="lightbox-panel">
+        <a class="lightbox-close" href="#thu-vien" aria-label="Đóng">×</a>
+        <p class="overline">Khung hình No.12 · Hẻm &amp; phố</p>
+        <h2 id="lb-title-12">Phố đi bộ đêm</h2>
+        <p class="lightbox-desc">Trục phố mở rộng về phía công trình cũ, người đi dạo thành những chấm nhỏ dưới đèn đường.</p>
+        <dl class="spec-list">
+          <dt>Cảm hứng</dt><dd>Phố đi bộ Nguyễn Huệ</dd>
+          <dt>Khu vực</dt><dd>Quận 1</dd>
+          <dt>Công trình</dt><dd>—</dd>
+          <dt>Giờ chụp</dt><dd>21:00</dd>
+          <dt>Tiêu cự</dt><dd>28 mm</dd>
+        </dl>
+        <div class="lightbox-actions">
+          <a class="btn btn-ghost" href="#photo-11" aria-label="Ảnh trước">←</a>
+          <a class="btn btn-primary" href="assets/photos/pho-di-bo.svg" download="pho-di-bo.svg">↓ Tải SVG</a>
+          <a class="btn btn-ghost" href="#photo-01" aria-label="Ảnh sau">→</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

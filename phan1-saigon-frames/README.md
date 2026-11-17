@@ -15,7 +15,8 @@ phan1-saigon-frames/
 ├── styles.css          # toàn bộ giao diện + responsive
 └── assets/
     ├── logo.svg
-    └── photos/         # 12 ảnh minh họa SVG tự vẽ bằng code (tools/gen_photos.py)
+    ├── fonts/          # Fraunces, Be Vietnam Pro, IBM Plex Mono (OFL) – chạy offline
+    └── photos/         # 12 ảnh minh họa WebP tạo bằng AI (prompt: ../tools/image-prompts.md)
 ```
 
-Ảnh là hình minh họa phẳng tự vẽ, lấy cảm hứng từ các công trình ở TP.HCM; không phải ảnh chụp thật.
+Ảnh là tranh minh họa phong cách khắc gỗ/risograph tạo bằng AI, lấy cảm hứng từ các công trình ở TP.HCM; không phải ảnh chụp thật, chi tiết công trình có thể khác thực tế.
